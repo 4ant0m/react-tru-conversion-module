@@ -1,6 +1,6 @@
 {
   "name": "react-tru-conversion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Tru Conversion Module",
   "devDependencies": {
     "babel-cli": "^6.24.1",

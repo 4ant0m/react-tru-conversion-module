@@ -5,7 +5,7 @@ const Snippets = {
         if (!id) warn('Id is required');
         if (!scriptIdUrl) warn('ScriptIdUrl is required');
 
-        const script = `<script type="text/javascript">
+        const script = `
                           (function(d,s,id){
                           var js, tjs = d.getElementsByTagName(s)[0];
                           if(d.getElementById(id)) { return; }
@@ -13,8 +13,8 @@ const Snippets = {
                           js.async = true;
                           js.src = d.location.protocol + '//app.truconversion.com/ti-js/${scriptIdUrl}.js';
                           tjs.parentNode.insertBefore(js, tjs);
-                          }(document, 'script', ${id}} ));
-                        </script>`;
+                          }(document, 'script', '${id}'));
+                        `;
 
         const dataLayerVar = this.dataLayer(dataLayer);
 
