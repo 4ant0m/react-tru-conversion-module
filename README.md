@@ -67,6 +67,7 @@ const app = document.getElementById('app')
 ReactDOM.render(<Router routes={routes} />, app)
 
 ```
+|Value|Type|Required|Notes|
 |------|-----|-----|-----|
 |id| `String`| Yes | id, must be something like `rl-js`.|
 |scriptIdUrl| `String`| Yes | Id's url for script, should be something like `dhhgj/fa32`.|
